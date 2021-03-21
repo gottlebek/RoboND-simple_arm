@@ -210,3 +210,8 @@ add_compile_options(-std=c++11)
 add_executable(arm_mover src/arm_mover.cpp)
 target_link_libraries(arm_mover ${catkin_LIBRARIES})
 add_dependencies(arm_mover simple_arm_generate_messages_cpp)
+
+## look_away node
+add_executable(look_away src/look_away.cpp)
+target_link_libraries(look_away ${catkin_LIBRARIES})
+add_dependencies(look_away simple_arm_generate_messages_cpp)
